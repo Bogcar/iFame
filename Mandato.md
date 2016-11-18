@@ -36,7 +36,7 @@ Utilizzati in modo confidenziale dal docente
 
 **Titolo del progetto di semestre**
 
-| Piattaforma ricette + spesa |
+| iFame |
 | --- |
 
 
