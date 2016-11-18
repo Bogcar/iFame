@@ -1,4 +1,4 @@
-##### Carlo Bogani SAMT 18.11.2016
+##### Carlo Bogani e Nico Ambrosini SAMT 18.11.2016
 
 # Diario
 
