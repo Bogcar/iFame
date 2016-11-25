@@ -126,7 +126,7 @@
 |**001**      | Login |
 |**002**      | Database |
 
- |ID  |REQ-002                                         |
+|ID  |REQ-002                                         |
 |----|------------------------------------------------|
 |**Nome**    |Registrazione|
 |**Priorità**|1                     |
@@ -146,7 +146,7 @@
 |**001**      | Lista ingredienti (titolo, descrizione, passaggi, difficoltà, tempistica, valutazione |
 |**002**      | Consultabile da chiunque |
 
- |ID  |REQ-004                                         |
+|ID  |REQ-004                                         |
 |----|------------------------------------------------|
 |**Nome**    |Utente|
 |**Priorità**|1                     |
