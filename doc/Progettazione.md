@@ -116,6 +116,10 @@
 
 ### Analisi e specifica dei requisiti
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
   |ID  |REQ-001                                         |
   |----|------------------------------------------------|
   |**Nome**    |Pagina web|
