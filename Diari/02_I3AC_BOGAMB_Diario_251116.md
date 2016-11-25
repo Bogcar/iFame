@@ -16,7 +16,7 @@ Use Case realizzato da Carlo:
 
 Schema E-R realizzato da Nico:
 
-![Schema ER](img/er.png)
+![Schema ER](../doc/img/er.png)
 
 Dalle ore 15:00 alle 15:45:  
 È stato svolto, da Carlo, il diario di oggi.
