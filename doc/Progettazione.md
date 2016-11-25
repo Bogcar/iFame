@@ -117,7 +117,6 @@
 ### Analisi e specifica dei requisiti
 
 
-<<<<<<< HEAD
   |ID  |REQ-001                                         |
   |----|------------------------------------------------|
   |**Nome**    |Pagina web|
@@ -190,106 +189,6 @@
   |            |**Sotto requisiti** |
   |**001**      | Parole chiave |
   |**002**      | Parametri (titolo, valutazioni, difficoltà, tempo) |
-
-=======
-|ID  |REQ-001       |
-|----|--------------|
-|**Nome**|Pagina web|
-|**Priorità**|1     |
-|**Versione**|1.0   |
-|**Note**    |      |
-|            |**Sotto requisiti** |
-|**001**     | Login |
-|**002**     | Database |
-
-|ID  |REQ-002                                         |
-|----|------------------------------------------------|
-|**Nome**    |Registrazione|
-|**Priorità**|1                     |
-|**Versione**|1.0                   |
-|**Note**    ||
-|            |**Sotto requisiti** |
-|**001**      | Inserire dati personali (username, password, email) |
-|**002**      | Verifica email |
-
-|ID  |REQ-003                                      |
-|----|------------------------------------------------|
-|**Nome**    |Ricette|
-|**Priorità**|1                     |
-|**Versione**|1.0                   |
-|**Note**    ||
-|            |**Sotto requisiti** |
-|**001**      | Lista ingredienti (titolo, descrizione, passaggi, difficoltà, tempistica, valutazione |
-|**002**      | Consultabile da chiunque |
-
-|ID  |REQ-004                                         |
-|----|------------------------------------------------|
-|**Nome**    |Utente|
-|**Priorità**|1                     |
-|**Versione**|1.0                   |
-|**Note**    ||
-|            |**Sotto requisiti** |
-|**001**      | Creare, eliminare e modificare ricette |
-|**002**      | Storico ricette |
-|**003**      | Valutare ricette |
-|**004**      | Creazione lista spesa |
-
-|ID  |REQ-005                                         |
-|----|------------------------------------------------|
-|**Nome**    |Amministratore|
-|**Priorità**|1                     |
-|**Versione**|1.0                   |
-|**Note**    ||
-|            |**Sotto requisiti** |
-|**001**      | Aggiungere ed eliminare utenti |
-|**002**      | Modificare privilegi (amministrativi) utenti |
-
-|ID  |REQ-006                                         |
-|----|------------------------------------------------|
-|**Nome**    |Guest|
-|**Priorità**|1                     |
-|**Versione**|1.0                   |
-|**Note**    ||
-|            |**Sotto requisiti** |
-|**001**      | Deve visualizzare le ricette in sola lettura |
-|**002**      | Valutare ricette |
-|**003**      | Creazione lista spesa |
-
-|ID  |REQ-006                                         |
-|----|------------------------------------------------|
-|**Nome**    |Ricerca|
-|**Priorità**|1                     |
-|**Versione**|1.0                   |
-|**Note**    ||
-|            |**Sotto requisiti** |
-|**001**      | Parole chiave |
-|**002**      | Parametri (titolo, valutazioni, difficoltà, tempo) |
-  
-  
->>>>>>> 1cc22d4cde0c1f9b3c39b343787b1b6cbfe9c275
-**Spiegazione elementi tabella dei requisiti:**
-
-**ID**: identificativo univoco del requisito
-
-**Nome**: breve descrizione del requisito
-
-**Priorità**: indica l’importanza di un requisito nell’insieme del
-progetto, definita assieme al committente. Ad esempio poter disporre di
-report con colonne di colori diversi ha priorità minore rispetto al
-fatto di avere un database con gli elementi al suo interno. Solitamente
-si definiscono al massimo di 2-3 livelli di priorità.
-
-**Versione**: indica la versione del requisito. Ogni modifica del
-requisito avrà una versione aggiornata.
-
-Sulla documentazione apparirà solamente l’ultima versione, mentre le
-vecchie dovranno essere inserite nei diari.
-
-**Note**: eventuali osservazioni importanti o riferimenti ad altri
-requisiti.
-
-**Sotto requisiti**: elementi che compongono il requisito.
-
 
 ### Use case
 
