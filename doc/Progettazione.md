@@ -117,17 +117,17 @@
 ### Analisi e specifica dei requisiti
 
 
-  |ID  |REQ-001                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Pagina web|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
+  |ID  |REQ-001       |
+  |----|--------------|
+  |**Nome**|Pagina web|
+  |**Priorità**|1     |
+  |**Versione**|1.0   |
+  |**Note**    |      |
   |            |**Sotto requisiti** |
-  |**001**      | Login |
-  |**002**      | Database |
+  |**001**     | Login |
+  |**002**     | Database |
   
-   |ID  |REQ-002                                         |
+  |ID  |REQ-002                                         |
   |----|------------------------------------------------|
   |**Nome**    |Registrazione|
   |**Priorità**|1                     |
@@ -147,7 +147,7 @@
   |**001**      | Lista ingredienti (titolo, descrizione, passaggi, difficoltà, tempistica, valutazione |
   |**002**      | Consultabile da chiunque |
   
-   |ID  |REQ-004                                         |
+  |ID  |REQ-004                                         |
   |----|------------------------------------------------|
   |**Nome**    |Utente|
   |**Priorità**|1                     |
@@ -189,6 +189,7 @@
   |            |**Sotto requisiti** |
   |**001**      | Parole chiave |
   |**002**      | Parametri (titolo, valutazioni, difficoltà, tempo) |
+  
   
 **Spiegazione elementi tabella dei requisiti:**
 
