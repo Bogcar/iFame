@@ -116,82 +116,78 @@
 
 ### Analisi e specifica dei requisiti
 
-<<<<<<< HEAD
-=======
+|ID  |REQ-001                                         |
+|----|------------------------------------------------|
+|**Nome**    |Pagina web|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Login |
+|**002**      | Database |
 
->>>>>>> origin/master
-  |ID  |REQ-001                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Pagina web|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Login |
-  |**002**      | Database |
+ |ID  |REQ-002                                         |
+|----|------------------------------------------------|
+|**Nome**    |Registrazione|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Inserire dati personali (username, password, email) |
+|**002**      | Verifica email |
 
-   |ID  |REQ-002                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Registrazione|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Inserire dati personali (username, password, email) |
-  |**002**      | Verifica email |
+|ID  |REQ-003                                      |
+|----|------------------------------------------------|
+|**Nome**    |Ricette|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Lista ingredienti (titolo, descrizione, passaggi, difficoltà, tempistica, valutazione |
+|**002**      | Consultabile da chiunque |
 
-  |ID  |REQ-003                                      |
-  |----|------------------------------------------------|
-  |**Nome**    |Ricette|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Lista ingredienti (titolo, descrizione, passaggi, difficoltà, tempistica, valutazione |
-  |**002**      | Consultabile da chiunque |
+ |ID  |REQ-004                                         |
+|----|------------------------------------------------|
+|**Nome**    |Utente|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Creare, eliminare e modificare ricette |
+|**002**      | Storico ricette |
+|**003**      | Valutare ricette |
+|**004**      | Creazione lista spesa |
 
-   |ID  |REQ-004                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Utente|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Creare, eliminare e modificare ricette |
-  |**002**      | Storico ricette |
-  |**003**      | Valutare ricette |
-  |**004**      | Creazione lista spesa |
+|ID  |REQ-005                                         |
+|----|------------------------------------------------|
+|**Nome**    |Amministratore|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Aggiungere ed eliminare utenti |
+|**002**      | Modificare privilegi (amministrativi) utenti |
 
-  |ID  |REQ-005                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Amministratore|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Aggiungere ed eliminare utenti |
-  |**002**      | Modificare privilegi (amministrativi) utenti |
+|ID  |REQ-006                                         |
+|----|------------------------------------------------|
+|**Nome**    |Guest|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Deve visualizzare le ricette in sola lettura |
+|**002**      | Valutare ricette |
+|**003**      | Creazione lista spesa |
 
-  |ID  |REQ-006                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Guest|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Deve visualizzare le ricette in sola lettura |
-  |**002**      | Valutare ricette |
-  |**003**      | Creazione lista spesa |
-
-  |ID  |REQ-007                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Ricerca|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Parole chiave |
-  |**002**      | Parametri (titolo, valutazioni, difficoltà, tempo) |
+|ID  |REQ-007                                         |
+|----|------------------------------------------------|
+|**Nome**    |Ricerca|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Parole chiave |
+|**002**      | Parametri (titolo, valutazioni, difficoltà, tempo) |
 
 ### Use case
 
