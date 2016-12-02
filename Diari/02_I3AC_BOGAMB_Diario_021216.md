@@ -20,15 +20,15 @@ Realizzazione del design appartenente al sito web, fatta da Carlo.
 
 Interfaccia guest:
 
-![Guest interface](../doc/img/InterfaceGuest.png)
+![Guest interface](../doc/img/InterfaceGuest.PNG)
 
 Interfaccia user:
 
-![User interface](../doc/img/InterfaceUser.png)
+![User interface](../doc/img/InterfaceUser.PNG)
 
 Interfaccie iFrame della pagina:  
 
-![iFrame interface](../doc/img/Interface_iFrameUser.png)
+![iFrame interface](../doc/img/Interface_iFrameUser.PNG)
 
 
 Nel mentre è stata cominciata anche la parte grafica del sito web, parte
