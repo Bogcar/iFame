@@ -90,38 +90,19 @@ Data di fine: 20.01.2017
 
 ### Scopo
 
-  Lo scopo del progetto (scopi didattici/scopi operativi). Dovrebbe
-  descrivere il mandato, ma non vanno ricopiate le informazioni del
-  quaderno dei compiti (che va invece allegato).
-
+Lo scopo del progetto è di creare un'applicazione web per la gestione delle proprie ricette. Oltre alle proprie ricette, l'utente può cercare altre ricette e creare la lista della spesa in modo che si possa stampare. Gli utenti possono anche valutare le ricette.
 
 ## Analisi
 
 ### Analisi del dominio
 
-  Questo capitolo dovrebbe descrivere il contesto in cui il prodotto verrà
-  utilizzato, da questa analisi dovrebbero scaturire le risposte a quesiti
-  quali ad esempio:
+Quando cerchi una ricetta, devi andare su internet e cercare tra molte pagine web dove tutti dicono cose diverse su come cucinare un piatto.
 
-  -   Background/Situazione iniziale
+Il prodotto si potrà utilizzare quotidianamente quando si cerca una ricetta per una cena o quando si conosce una ricetta e la si vuole condividere.
 
-  -   Quale è e come è organizzato il contesto in cui il prodotto dovrà
-      funzionare?
+Esistono applicazioni simili che fanno quasi le stesse cose di questo prodotto.
 
-  -   Come viene risolto attualmente il problema? Esiste già un prodotto
-      simile?
-
-  -   Chi sono gli utenti? Che bisogni hanno? Come e dove lavorano?
-
-  -   Che competenze/conoscenze/cultura posseggono gli utenti in relazione
-      con il problema?
-
-  -   Esistono convenzioni/standard applicati nel dominio?
-
-  -   Che conoscenze teoriche bisogna avere/acquisire per poter operare
-      efficacemente nel dominio?
-
-  -   …
+Gli utenti non hanno bisogno di conoscenze particolari, basta saper navigare su internet.
 
 ### Analisi e specifica dei requisiti
 
@@ -202,22 +183,14 @@ Data di fine: 20.01.2017
 
 ![Use Case](img/use_case.png)
 
-### Pianificazione
+#### Pianificazione
 
-Prima di stabilire una pianificazione bisogna avere almeno una vaga idea
-del modello di sviluppo che si intende adottare. In questa sezione
-bisognerà inserire il modello concettuale di sviluppo che si seguirà
-durante il progetto. Gli elementi di riferimento per una buona
-pianificazione derivano da una scomposizione top-down della problematica
-del progetto.
+![Gantt](img/Gantt_iFame.png)
 
-La pianificazione può essere rappresentata mediante un diagramma di
-Gantt.
+#### Analisi dei mezzi
 
-Se si usano altri metodi di pianificazione (es scrum), dovranno apparire
-in questo capitolo.
-
-### Analisi dei mezzi
+Questo prodotto verrà messo su un web server con i servizi seguenti:
+- Apache: 
 
 Elencare e *descrivere* i mezzi disponibili per la realizzazione del
 progetto. Ricordarsi di sempre descrivere nel dettaglio le versioni e il
