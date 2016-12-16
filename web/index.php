@@ -77,7 +77,7 @@
                                         }
                                 } else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                                         if (isset($_GET['activation'])) {
-                                                _active();
+                                                _active("signin");
                                         }
                                 }
                         ?>
@@ -150,8 +150,8 @@
                 </form>
         </div>
         <!--/SignupModal-->
-        <!--signupModal-->
-        <div id="myModal" class="modal fade" role="dialog">
+        <!--confirmationLink-->
+        <div id="confirmationLink" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                         <!-- Modal content-->
                         <div class="modal-content">
@@ -163,12 +163,26 @@
                 </div>
                 </form>
         </div>
-        <!--/SignupModal-->
+        <!--/confirmationLink-->
+        <!--actived-->
+        <div id="actived" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Account successfully created!</h4>
+                                </div>
+                        </div>
+                </div>
+                </form>
+        </div>
+        <!--/actived-->
 </body>
 </html>
 
 <?php
-        function _signIn() {
+        function _signIn($ciao) {
                 include 'db.php';
                 session_start();
 
@@ -226,7 +240,7 @@
                                         echo "<script>
                                         $( document ).ready(function() {
 
-                                                $('#myModal').modal('show');
+                                                $('#confirmationLink').modal('show');
                                         });
                                         </script>";
 
@@ -278,7 +292,13 @@
                                 $sql = "INSERT INTO Users(username, password, email, admin) VALUES ('" . $row['username'] . "', '" . $row['password'] . "', '" . $row['email'] . "', false)";
 
                                 if ($conn->query($sql)) {
-                                        echo 'ok';
+
+                                        echo "<script>
+                                        $( document ).ready(function() {
+
+                                                $('#actived').modal('show');
+                                        });
+                                        </script>";
 
                                         $sql = "DELETE FROM Confirmation WHERE id=" . $row['id'] . ";";
 
