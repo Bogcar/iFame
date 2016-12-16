@@ -94,15 +94,22 @@ Lo scopo del progetto è di creare un'applicazione web per la gestione delle pro
 
 ## Analisi
 
-### Analisi del dominio
+### Analisi del dominio  
+   
 
-Quando cerchi una ricetta, devi andare su internet e cercare tra molte pagine web dove tutti dicono cose diverse su come cucinare un piatto.
+Il tipico problema che si ha nelle cucine è quello della scelta e lo svolgimento
+di una ricette, molto spesso per ovviare questo problema si procede con
+l'acquisto di un libro di ricette. Ma al giorno d'oggi la tecnologia ha preso
+il sopravvento e di conseguenza nelle case i libri vengono poco usati.
 
-Il prodotto si potrà utilizzare quotidianamente quando si cerca una ricetta per una cena o quando si conosce una ricetta e la si vuole condividere.
+Per risolvere il tutto si opta per vedere e seguire le ricette
+di prorio interesse su un classico smartphone o tablet, la navigazione
+in internet è molto diffusa in tutto il mondo e non richiede conoscenze
+particolari.
 
-Esistono applicazioni simili che fanno quasi le stesse cose di questo prodotto.
-
-Gli utenti non hanno bisogno di conoscenze particolari, basta saper navigare su internet.
+Il prodotto si potrà utilizzare tranquillamente senza nessun ostacolo,
+vi è anche la possibilità di condivere le proprie ricette, in modo da
+rendere più entusiasmante la creazione di un piatto.
 
 ### Analisi e specifica dei requisiti
 
@@ -190,7 +197,7 @@ Gli utenti non hanno bisogno di conoscenze particolari, basta saper navigare su 
 #### Analisi dei mezzi
 
 Questo prodotto verrà messo su un web server con i servizi seguenti:
-- Apache: 
+- Apache:
 
 Elencare e *descrivere* i mezzi disponibili per la realizzazione del
 progetto. Ricordarsi di sempre descrivere nel dettaglio le versioni e il
