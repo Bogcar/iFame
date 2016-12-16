@@ -1,3 +1,17 @@
+<?php
+  include 'db.php';
+  session_start();
+
+  if (isset($_SESSION['login_user'])) {
+      $sql = "SELECT id FROM Utenti where username = '".$_SESSION['login_user']."'";
+
+      $result = $conn->query($sql);
+
+      if ($result->num_rows == 1) {
+          header('Location: home.php');
+      }
+  }
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,9 +62,21 @@
                         </div>
                 </div>
         </nav>
-        <div class="row">
-                <iframe class="col-md-12" id="frame" src="index/search.html" style="border: 0px">
-                </iframe>
+
+        <div class="container">
+                <div class="row">
+<?php
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                if (isset($_POST['signin'])) {
+                        _signIn();
+                } else {
+                        _signUp();
+                }
+        }
+?>
+                        <iframe class="col-md-12" id="frame" src="index/search.html" style="border: 0px">
+                        </iframe>
+                </div>
         </div>
 
         <!-- Signin Modal -->
@@ -118,3 +144,78 @@
         <!--/SignupModal-->
 </body>
 </html>
+
+<?php
+        function _signIn() {
+                include 'db.php';
+
+                $user = $_POST['username'];
+                $pass = md5($_POST['password']);
+
+                $sql = "SELECT id, username FROM Users WHERE password = '".$pass."' AND (username = '".$user."' OR email = '".$user."')";
+
+                $result = $conn->query($sql);
+
+                if ($result->num_rows == 1) {
+                        while ($row = $result->fetch_assoc()) {
+                                $_SESSION['login_user'] = $row['username'];
+                        }
+                        header('Location: home.php');
+                } else {
+                        echo '<div class="alert alert-danger">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Login errato</strong><br /> Dati inseriti sbagliati.
+                        </div>';
+                }
+        }
+
+        function _signUp() {
+                include 'db.php';
+                $user = $_POST['username'];
+                $email = $_POST['email'];
+                $pass = md5($_POST['password']);
+                $cPass = md5($_POST['confirmPassword']);
+
+                if (_controlData($user, $email, $pass, $cPass)) {
+                        $sql = "SELECT id FROM Users WHERE username = '".$user."' OR email = '".$email."'";
+
+                        $result = $conn->query($sql);
+
+                        if ($result->num_rows == 0) {
+                                $sql = "INSERT INTO Users(username, password, email, admin) VALUES('".$user."', '".$pass."', '".$email."', false)";
+
+                                if ($conn->query($sql)) {
+                                        echo '<div class="alert alert-success">
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                        <strong>Success!</strong> <br /> User correctly created!
+                                        </div>';
+                                } else {
+                                        echo '<div class="alert alert-danger">
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                        <strong>Failure!</strong> <br />
+                                        User not created.
+                                        </div>';
+                                }
+                        } else {
+                                echo '<div class="alert alert-danger">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                <strong>Failure!</strong> <br />
+                                Use another username or email.
+                                </div>';
+                        }
+                } else {
+                        echo '<div class="alert alert-danger">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Failure!</strong> <br />
+                        Password and Confirm Password doesn\'t matches!
+                        </div>';
+                }
+        }
+
+        function _controlData($user, $email, $pass, $cPass) {
+                if ($pass != $cPass) {
+                        return false;
+                }
+                return true;
+        }
+ ?>

@@ -1,10 +1,15 @@
-function setUp() {
+$(document).ready(function() {
+        var x = $(document).width() * 15 / 100;
+        $("#well").css({"width": x});
+
         var frame = document.getElementById('frame');
         frame.style.height = (window.innerHeight - 150) + 'px';
 
-        console.log(frame.contentWindow.document.body.scrollHeight + 'px');
-}
+        var h = $(window).height() - 150;
+
+        $("iframe").css({"height" : h});
+});
 
 function frame(url) {
-        document.getElementById('frame').src = url;
+        $("iframe").attr({'src' : url});
 }
