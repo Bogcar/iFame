@@ -1,3 +1,19 @@
+<?php
+  include 'db.php';
+  session_start();
+
+  if (isset($_SESSION['login_user'])) {
+      $sql = "SELECT id FROM Users where username = '".$_SESSION['login_user']."'";
+
+      $result = $conn->query($sql);
+
+      if ($result->num_rows == 0) {
+          header('Location: index.php');
+      }
+  } else {
+      header('Location: index.php');
+  }
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,7 +59,7 @@
                                         </li>
                                         <li class="dropdown">
                                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                                        <span class="glyphicon glyphicon-user"></span> Username<span class="caret"></span>
+                                                        <span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['login_user']; ?><span class="caret"></span>
                                                 </a>
                                                 <ul class="dropdown-menu">
                                                         <li>

@@ -3,7 +3,7 @@
   session_start();
 
   if (isset($_SESSION['login_user'])) {
-      $sql = "SELECT id FROM Utenti where username = '".$_SESSION['login_user']."'";
+      $sql = "SELECT id FROM Users where username = '" . $_SESSION['login_user'] . "'";
 
       $result = $conn->query($sql);
 
@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -30,6 +30,9 @@
 
         <link rel="stylesheet" href="css/style.css" />
         <script src="js/script.js"></script>
+
+
+
 </head>
 <body onload="setUp()">
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -65,15 +68,19 @@
 
         <div class="container">
                 <div class="row">
-<?php
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                if (isset($_POST['signin'])) {
-                        _signIn();
-                } else {
-                        _signUp();
-                }
-        }
-?>
+                        <?php
+                                if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                                        if (isset($_POST['signin'])) {
+                                                _signIn();
+                                        }  else {
+                                                _signUp();
+                                        }
+                                } else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+                                        if (isset($_GET['activation'])) {
+                                                _active("signin");
+                                        }
+                                }
+                        ?>
                         <iframe class="col-md-12" id="frame" src="index/search.html" style="border: 0px">
                         </iframe>
                 </div>
@@ -98,6 +105,7 @@
                                                         <label for="password">Password:</label>
                                                         <input type="password" class="form-control" id="password" name="password">
                                                 </div>
+                                                <span name="confirmationLink"></span>
                                                 <input type="submit" class="btn btn-default" name="signin">
                                         </form>
                                 </div>
@@ -142,24 +150,52 @@
                 </form>
         </div>
         <!--/SignupModal-->
+        <!--confirmationLink-->
+        <div id="confirmationLink" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Confirmation link sent</h4>
+                                </div>
+                        </div>
+                </div>
+                </form>
+        </div>
+        <!--/confirmationLink-->
+        <!--actived-->
+        <div id="actived" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Account successfully created!</h4>
+                                </div>
+                        </div>
+                </div>
+                </form>
+        </div>
+        <!--/actived-->
 </body>
 </html>
 
 <?php
-        function _signIn() {
+        function _signIn($ciao) {
                 include 'db.php';
+                session_start();
 
                 $user = $_POST['username'];
                 $pass = md5($_POST['password']);
 
-                $sql = "SELECT id, username FROM Users WHERE password = '".$pass."' AND (username = '".$user."' OR email = '".$user."')";
+                $sql = "SELECT * FROM Users WHERE password = '".$pass."' AND (username = '".$user."' OR email = '".$user."')";
 
                 $result = $conn->query($sql);
 
                 if ($result->num_rows == 1) {
-                        while ($row = $result->fetch_assoc()) {
-                                $_SESSION['login_user'] = $row['username'];
-                        }
+                        $_SESSION['login_user'] = $user;
+
                         header('Location: home.php');
                 } else {
                         echo '<div class="alert alert-danger">
@@ -177,14 +213,37 @@
                 $cPass = md5($_POST['confirmPassword']);
 
                 if (_controlData($user, $email, $pass, $cPass)) {
-                        $sql = "SELECT id FROM Users WHERE username = '".$user."' OR email = '".$email."'";
+                        $sql = "SELECT *
+                                FROM Users
+                                WHERE username =  '" . $user . "' OR
+                                email = '" . $email . "'
+                                UNION ALL
+                                SELECT *
+                                FROM Confirmation
+                                WHERE username =  '" . $user . "' OR
+                                email = '" . $email . "'";
 
                         $result = $conn->query($sql);
 
                         if ($result->num_rows == 0) {
-                                $sql = "INSERT INTO Users(username, password, email, admin) VALUES('".$user."', '".$pass."', '".$email."', false)";
+                                $sql = "INSERT INTO Confirmation(username, password, email, hash) VALUES('".$user."', '".$pass."', '".$email."', '".md5($user)."')";
 
                                 if ($conn->query($sql)) {
+
+                                        $to = $email;
+                                        $subject = "Account activation";
+                                        $txt = "Hello,\nto confirm the new account click on the link below:\nLink: http://www.samtinfo.ch/i3_ifame/index.php?activation=".md5($user);
+                                        $headers = "From: no-reply@ifame.ch";
+
+                                        mail($to,$subject,$txt,$headers);
+
+                                        echo "<script>
+                                        $( document ).ready(function() {
+
+                                                $('#confirmationLink').modal('show');
+                                        });
+                                        </script>";
+
                                         echo '<div class="alert alert-success">
                                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                                         <strong>Success!</strong> <br /> User correctly created!
@@ -217,5 +276,37 @@
                         return false;
                 }
                 return true;
+        }
+
+        function _active() {
+                include 'db.php';
+
+                $activation = $_GET['activation'];
+
+                $sql = "SELECT * FROM Confirmation WHERE hash = '" . $activation . "';";
+
+                $result = $conn->query($sql);
+
+                if ($result->num_rows == 1) {
+                        while ($row = $result->fetch_assoc()) {
+                                $sql = "INSERT INTO Users(username, password, email, admin) VALUES ('" . $row['username'] . "', '" . $row['password'] . "', '" . $row['email'] . "', false)";
+
+                                if ($conn->query($sql)) {
+
+                                        echo "<script>
+                                        $( document ).ready(function() {
+
+                                                $('#actived').modal('show');
+                                        });
+                                        </script>";
+
+                                        $sql = "DELETE FROM Confirmation WHERE id=" . $row['id'] . ";";
+
+                                        $conn->query($sql);
+                                } else {
+                                        echo '<br /><br />:(';
+                                }
+                        }
+                }
         }
  ?>
