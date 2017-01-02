@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Settings | iFame</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="js/script.js"></script>
+</head>
+<body onload="">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                        <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="">iFame</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav">
+                                        <li class="active"><a href="">Home</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                        <li>
+                                                <form class="navbar-form navbar-left">
+                                                        <div class="form-group">
+                                                                <input type="text" class="form-control" placeholder="Search" name="search">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-default">Submit</button>
+                                                </form>
+                                        </li>
+                                        <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                        <span class="glyphicon glyphicon-user"></span> Username<span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                        <li>
+                                                                <a href="settings.php"><span class="glyphicon glyphicon-briefcase"></span> Settings</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="logout.php"><span class="glyphicon glyphicon-log-out" ></span> Logout</a></li>
+                                                        </li>
+                                                </ul>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+        </nav>
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-2" style="margin-top: 50px">
+                                <table class="table table-bordered table-hover">
+                                        <tr onclick="frame('settings/account.html')">
+                                                <td>
+                                                        <b>Account</b>
+                                                </td>
+                                        </tr>
+                                        <tr onclick="frame('settings/info.html')">
+                                                <td>
+                                                        <b>Info</b>
+                                                </td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <iframe class="col-md-10" id="frame" src="settings/account.html">
+
+                        </iframe>
+                </div>
+        </div>
+</body>
+</html>
