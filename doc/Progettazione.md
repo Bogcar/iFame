@@ -1,3 +1,5 @@
+# Progettazione
+
 1. [Introduzione](#introduzione)
 
   - [Informazioni sul progetto](#informazioni-sul-progetto)
@@ -51,51 +53,26 @@ Data di fine: 20.01.2017
 
 ### Abstract
 
-  E’ una breve e accurata rappresentazione dei contenuti di un documento,
-  senza notazioni critiche o valutazioni. Lo scopo di un abstract efficace
-  dovrebbe essere quello di far conoscere all’utente il contenuto di base
-  di un documento e metterlo nella condizione di decidere se risponde ai
-  suoi interessi e se è opportuno il ricorso al documento originale.
 
-  Può contenere alcuni o tutti gli elementi seguenti:
-
-  -   **Background/Situazione iniziale**
-
-  -   **Descrizione del problema e motivazione**: Che problema ho cercato
-      di risolvere? Questa sezione dovrebbe includere l'importanza del
-      vostro lavoro, la difficoltà dell'area e l'effetto che potrebbe
-      avere se portato a termine con successo.
-
-  -   **Approccio/Metodi**: Come ho ottenuto dei progressi? Come ho
-      risolto il problema (tecniche…)? Quale è stata l’entità del mio
-      lavoro? Che fattori importanti controllo, ignoro o misuro?
-
-  -   **Risultati**: Quale è la risposta? Quali sono i risultati? Quanto è
-      più veloce, più sicuro, più economico o in qualche altro aspetto
-      migliore di altri prodotti/soluzioni?
-
-  Esempio di abstract:
-
-  > *As the size and complexity of today’s most modern computer chips
-  > increase, new techniques must be developed to effectively design and
-  > create Very Large Scale Integration chips quickly. For this project, a
-  > new type of hardware compiler is created. This hardware compiler will
-  > read a C++ program, and physically design a suitable microprocessor
-  > intended for running that specific program. With this new and powerful
-  > compiler, it is possible to design anything from a small adder, to a
-  > microprocessor with millions of transistors. Designing new computer
-  > chips, such as the Pentium 4, can require dozens of engineers and
-  > months of time. With the help of this compiler, a single person could
-  > design such a large-scale microprocessor in just weeks.*
+  > The books of coocking are very present in kitchens, but   
+  > sometimes those can be cumbersome.
+  > For solve this problem there is the use of tecnology,   
+  > some people use tablets, mobile phone, etc.
+  > We were requested to realize a site of recipes's management.
 
 ### Scopo
-
-Lo scopo del progetto è di creare un'applicazione web per la gestione delle proprie ricette. Oltre alle proprie ricette, l'utente può cercare altre ricette e creare la lista della spesa in modo che si possa stampare. Gli utenti possono anche valutare le ricette.
+Lo scopo di questo progetto è quello di sviluppare un'applicazione web per
+offrire il consulto delle ricette di altri e la gestione delle
+proprie.
+Oltretutto, si dovrà dare la possibilità di registrasi in modo da creare
+delle nuove ricette in modo da farsele valutare da tutti i visitatori,
+oltre a quest'ultima vi è pure quella di generare la propria lista della spesa
+in base alla ricetta che si sta consultando.
 
 ## Analisi
 
 ### Analisi del dominio  
-   
+
 
 Il tipico problema che si ha nelle cucine è quello della scelta e lo svolgimento
 di una ricette, molto spesso per ovviare questo problema si procede con
@@ -190,32 +167,34 @@ rendere più entusiasmante la creazione di un piatto.
 
 ![Use Case](img/use_case.png)
 
-#### Pianificazione
+In questo schema abbiamo rappresentato tutti i rispettivi casi del progetto.
+
+### Pianificazione
 
 ![Gantt](img/Gantt_iFame.png)
 
-#### Analisi dei mezzi
+Le attività evidenziate di colore verde nel diagramma di Ganttt,
+sono in parallelo.
 
-Questo prodotto verrà messo su un web server con i servizi seguenti:
-- Apache:
+### Analisi dei mezzi
 
-Elencare e *descrivere* i mezzi disponibili per la realizzazione del
-progetto. Ricordarsi di sempre descrivere nel dettaglio le versioni e il
-modello di riferimento.
+Questo prodotto verrà messo su un web server.   
 
-SDK, librerie, tools utilizzati per la realizzazione del progetto e
-eventuali dipendenze.
+I mezzi per realizzare il tutto sono i seguenti:
 
-Su quale piattaforma dovrà essere eseguito il prodotto? Che hardware
-particolare è coinvolto nel progetto? Che particolarità e limitazioni
-presenta? Che hw sarà disponibile durante lo sviluppo?
+- Apache: usato per ospitare il sito
+
+- PhpMyAdmin: usato per la gestione del database e le sue tabelle
+
+- MySql: usato per la gestione dei dati nelle tabelle
+
+- Linguaggi HTML e CSS: utilizzati per l'interfaccia grafica
+
+- Linguaggi Php, MySQL, JavaScript: utilizzati per la gestione del sito
+
+- 2 PC: usati per svolgere il tutto
 
 ## Progettazione
-
-Questo capitolo descrive esaustivamente come deve essere realizzato il
-prodotto fin nei suoi dettagli. Una buona progettazione permette
-all’esecutore di evitare fraintendimenti e imprecisioni
-nell’implementazione del prodotto.
 
 ### Design dell’architettura del sistema
 
@@ -231,35 +210,55 @@ Descrive:
 
 -   Eventuale sitemap
 
-### Design dei dati e database
-
-Descrizione delle strutture di dati utilizzate dal programma in base
-agli attributi e le relazioni degli oggetti in uso.
-
 ### Schema E-R, schema logico e descrizione.
 
 ![Schema ER](img/er.png)
-### Design delle interfacce
 
-Descrizione delle interfacce interne ed esterne del sistema e
-dell’interfaccia utente. La progettazione delle interfacce è basata
-sulle informazioni ricavate durante la fase di analisi e realizzata
-tramite mockups.
+Nello schema sono rappresentate tutte le relazioni tra le varie tabelle.
+
+### Design delle interfacce  
+
+![Interfaccia utente](img/InterfaceGuest.png)  
+
+Questa è l'interfaccia grafica che un visitatore non registrato avrà, appena
+entrato nel sito.  
+È stato preso lo spounto dai vari siti online.  
+Come si può notare è suddiviso in due parti, quella a sinistra è utlizzata per
+una sorta di home in cui vengono mostrate varie ricette presenti nel sito,
+invece su quella di destra vi è una spazio per generare la propria lista della
+spesa che sarà poi scaricata in formato PDF.
+
+![Interfaccia utente](img/InterfaceUser.png)
+
+Questa è l'interfaccia di un utente registrato, appena eseguito il login.  
+L'utilizzatore potrà entrare nelle opzioni legate al suo account ed ovviamente
+fare un Log-out.  
+Nella pagina principale vi si troverà uno spazio apposito in cui poter
+creare la propria ricette inserendo i dati negli spazi predefiniti.
+
+
+![Interfaccia utente](img/Interface_iFrameUser.png)
+
+Qua sotto mostrati le finestre che potranno apparire nel iFrame in mezzo
+del utente:
+
+- In alto a sinistra è presente la schermata su cui creare la propria ricette,
+questa contiene degli spazi predefiniti in cui immettere il necessario.
+
+- In alto a destra, invece, si trova l'interfaccia che si visualizzerà una volta
+effettuata la ricerca di una ricetta, ogni ricette verrà identificata da titolo,
+temmpo, descrizione e voto.
+
+- In basso a sinistra è situato lo spazio dedicato alle impostazioni dell'utente,
+in quest'ultimo si avrà la possibilità di cambiare la password e l'e-mail.
+
+- In basso a destra, come ultimo, è presente una schermata appartenente all'
+utente dove potrà visualizzare le statistiche delle sue ricette create.
 
 ### Design procedurale
 
-Descrive i concetti dettagliati dell’architettura/sviluppo utilizzando
-ad esempio:
+![Diagramma di flusso](img/DF_iFame.png)
 
--   Diagrammi di flusso e Nassi.
-
--   Tabelle.
-
--   Classi e metodi.
-
--   Tabelle di routing
-
--   Diritti di accesso a condivisioni …
-
-Questi documenti permetteranno di rappresentare i dettagli procedurali
-per la realizzazione del prodotto.
+Questo diagramma di flusso rappresenta solo un caso semplice che si verifica,
+ovvero quando un cliente entra nel sito ed esegue le azioni solo per una volta
+soltanto.
