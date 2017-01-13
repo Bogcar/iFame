@@ -211,7 +211,7 @@ http://www.heidisql.com/download.php
 
 ### Design dell’architettura del sistema  
 
-![Site map](img/Sitemap_iFame.PNG)
+![Site map](img/Sitemap_iFame.png)
 
 Questo è il sitemap del sito web, questo comprende tutti i file che
 costituiscono l'interfaccia grafica.   
