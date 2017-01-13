@@ -22,9 +22,13 @@
 
 1. [Progettazione](#progettazione)
 
-  - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
+  - [Design dell’architettura del sistema](#design-dell’architettura-del-sist)
 
-  - [Design dei dati e database](#design-dei-dati-e-database)
+  - [Schema E-R, schema logico e descrizione](#schema-er-logico-desc)
+
+  - [Design delle interfacce](#design-interfaces)
+
+  - [Design procedurale](#desgin-procedurale)
 
 
 
@@ -192,23 +196,27 @@ I mezzi per realizzare il tutto sono i seguenti:
 
 - Linguaggi Php, MySQL, JavaScript: utilizzati per la gestione del sito
 
+- Microsoft Visio 2016: usato per realizzare alcuni schemi, recapitabile
+nel seguente sito https://products.office.com/en-us/visio/flowchart-software
+
+- Heidi SQL 9.4.0 : usato per prove del database in locale, scaricabile
+ gratuitamente da 
+http://www.heidisql.com/download.php
+
+- Diagram Designer 1.28 : usato per il diagramma di flusso, scaricabile da http://logicnet.dk/DiagramDesigner/
+
 - 2 PC: usati per svolgere il tutto
 
 ## Progettazione
 
-### Design dell’architettura del sistema
+### Design dell’architettura del sistema  
 
-Descrive:
+![Site map](img/Sitemap_iFame.PNG)
 
--   La struttura del programma/sistema lo schema di rete...
-
--   Gli oggetti/moduli/componenti che lo compongono.
-
--   I flussi di informazione in ingresso ed in uscita e le
-    relative elaborazioni. Può utilizzare *diagrammi di flusso dei
-    dati* (DFD).
-
--   Eventuale sitemap
+Questo è il sitemap del sito web, questo comprende tutti i file che
+costituiscono l'interfaccia grafica.   
+È stato realizzato con Visio 2016, è stato preso uno spunto da internet
+poiché non era mai stata realizzata una mappa simile.
 
 ### Schema E-R, schema logico e descrizione.
 
@@ -218,7 +226,7 @@ Nello schema sono rappresentate tutte le relazioni tra le varie tabelle.
 
 ### Design delle interfacce  
 
-![Interfaccia utente](img/InterfaceGuest.png)  
+![Interfaccia utente](img/InterfaceGuest.PNG)  
 
 Questa è l'interfaccia grafica che un visitatore non registrato avrà, appena
 entrato nel sito.  
@@ -228,7 +236,7 @@ una sorta di home in cui vengono mostrate varie ricette presenti nel sito,
 invece su quella di destra vi è una spazio per generare la propria lista della
 spesa che sarà poi scaricata in formato PDF.
 
-![Interfaccia utente](img/InterfaceUser.png)
+![Interfaccia utente](img/InterfaceUser.PNG)
 
 Questa è l'interfaccia di un utente registrato, appena eseguito il login.  
 L'utilizzatore potrà entrare nelle opzioni legate al suo account ed ovviamente
@@ -237,7 +245,7 @@ Nella pagina principale vi si troverà uno spazio apposito in cui poter
 creare la propria ricette inserendo i dati negli spazi predefiniti.
 
 
-![Interfaccia utente](img/Interface_iFrameUser.png)
+![Interfaccia utente](img/Interface_iFrameUser.PNG)
 
 Qua sotto mostrati le finestre che potranno apparire nel iFrame in mezzo
 del utente:
