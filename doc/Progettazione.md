@@ -22,11 +22,11 @@
 
 1. [Progettazione](#progettazione)
 
-  - [Design dell’architettura del sistema](#design-dell’architettura-del-sist)
+  - [Design dell’architettura del sistema](#design-dell’-architettura-del-sistema)
 
-  - [Schema E-R, schema logico e descrizione](#schema-er-logico-desc)
+  - [Schema E-R, schema logico e descrizione](#schema-er-logico-descrizione)
 
-  - [Design delle interfacce](#design-interfaces)
+  - [Design delle interfacce](#design-delle-interfacce)
 
   - [Design procedurale](#desgin-procedurale)
 
