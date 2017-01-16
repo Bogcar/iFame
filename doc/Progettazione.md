@@ -58,7 +58,7 @@ Data di fine: 20.01.2017
 ### Abstract
 
 
-  > The books of coocking are very present in kitchens, but   
+  > The cookbooks are very present in kitchens, but   
   > sometimes those can be cumbersome.
   > For solve this problem there is the use of tecnology,   
   > some people use tablets, mobile phone, etc.
