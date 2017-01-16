@@ -47,7 +47,7 @@ Allievi:
 - Nico Ambrosini
 - Carlo Bogani
 
-Docenti responsabili:
+Docente responsabile:
 
 - Luca Muggiasca
 
@@ -200,7 +200,7 @@ I mezzi per realizzare il tutto sono i seguenti:
 nel seguente sito https://products.office.com/en-us/visio/flowchart-software
 
 - Heidi SQL 9.4.0 : usato per prove del database in locale, scaricabile
- gratuitamente da 
+ gratuitamente da
 http://www.heidisql.com/download.php
 
 - Diagram Designer 1.28 : usato per il diagramma di flusso, scaricabile da http://logicnet.dk/DiagramDesigner/

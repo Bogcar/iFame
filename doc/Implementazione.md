@@ -1,9 +1,11 @@
+# Implementazione
+
 1. [Introduzione](#introduzione)
 
   - [Informazioni sul progetto](#informazioni-sul-progetto)
 
   - [Scopo](#scopo)
- 
+
 1. [Implementazione](#implementazione)
 
 1. [Test](#test)
@@ -32,16 +34,24 @@
 
 ### Informazioni sul progetto
 
-  In questo capitolo raccogliere le informazioni relative al progetto, ad esempio:
+Scuola SAMT - Scuola arti e mestieri Trevano
 
-  -   Allievo/i e docente/i coinvolti nel progetto e rispettivi ruoli,
+Sezione: Informatica
 
-  -   scuola ,sezione, materia/e,
+Materia: Modulo 306
 
-  -   date di inizio e termine di consegna,
+Allievi:
 
-  -   …
-  -   
+- Nico Ambrosini
+- Carlo Bogani
+
+Docente responsabile:
+
+- Luca Muggiasca
+
+Data di inizio: 28.10.2016
+
+Data di fine: 20.01.2017
 
 ## Implementazione
 
