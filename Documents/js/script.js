@@ -1,3 +1,4 @@
+//Nico
 function setUp() {
         var frame = document.getElementById('frame');
         frame.style.height = (window.innerHeight - 150) + 'px';
@@ -9,6 +10,7 @@ function frame(url) {
         document.getElementById('frame').src = url;
 }
 
+//Carlo
 $(document).ready(function(){
 
 $("#ingredients").focus(function() {
@@ -22,8 +24,8 @@ $("#ingredients").keyup(function(event)
 	if(keycode == '13'){
 		document.getElementById('ingredients').value +='• ';
 	}
-	else if(keycode == '8' && document.getElementById('ingredients').value !=null){
-		document.getElementById('ingredients').value = '• ';
+	else if(keycode == '8' && document.getElementById('ingredients').value == 0){
+		document.getElementById('ingredients').value += '• ';
 	}
 	var txtval = document.getElementById('ingredients').value;
 	if(txtval.substr(txtval.length - 1) == '\n'){
