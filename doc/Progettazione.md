@@ -127,7 +127,7 @@ rendere più entusiasmante la creazione di un piatto.
 |ID  |REQ-004                                         |
 |----|------------------------------------------------|
 |**Nome**    |Utente|
-|**Priorità**|1                     |
+|**Priorità**|2                     |
 |**Versione**|1.0                   |
 |**Note**    ||
 |            |**Sotto requisiti** |
@@ -139,7 +139,7 @@ rendere più entusiasmante la creazione di un piatto.
 |ID  |REQ-005                                         |
 |----|------------------------------------------------|
 |**Nome**    |Amministratore|
-|**Priorità**|1                     |
+|**Priorità**|2                    |
 |**Versione**|1.0                   |
 |**Note**    ||
 |            |**Sotto requisiti** |
@@ -196,14 +196,13 @@ I mezzi per realizzare il tutto sono i seguenti:
 
 - Linguaggi Php, MySQL, JavaScript: utilizzati per la gestione del sito
 
-- Microsoft Visio 2016: usato per realizzare alcuni schemi, recapitabile
-nel seguente sito https://products.office.com/en-us/visio/flowchart-software
+- Microsoft Visio 2016: usato per realizzare alcuni schemi
 
-- Heidi SQL 9.4.0 : usato per prove del database in locale, scaricabile
- gratuitamente da
-http://www.heidisql.com/download.php
+- Heidi SQL 9.4.0 : usato per prove del database in locale
 
-- Diagram Designer 1.28 : usato per il diagramma di flusso, scaricabile da http://logicnet.dk/DiagramDesigner/
+- Diagram Designer 1.28 : usato per il diagramma di flusso
+
+- GanttProject 2.8.1 Pilsen, software utilizzato per sviluppare il diagramma di Gantt
 
 - 2 PC: usati per svolgere il tutto
 
