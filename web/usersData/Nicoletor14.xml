@@ -1,26 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <recipes>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<recipe title="wqf">
-		<time>0</time>
+	<recipe title='asdf'>
+		<time>10</time>
 		<ingredients>
-			<ingredient/>
+			<ingredient>Pasta</ingredient>
 		</ingredients>
-		<description/>
+		<description>asdf</description>
 		<procedures>
-			<procedure/>
+			<procedure>Cuocere la pasta</procedure>
 		</procedures>
 	</recipe>
-	
-	
-	
+	<recipe title='asdf'>
+                <time>10</time>
+                <ingredients>
+                        <ingredient>Pasta</ingredient>
+                </ingredients>
+                <description>asdf</description>
+                <procedures>
+                        <procedure>Cuocere la pasta</procedure>
+                </procedures>
+        </recipe>
+	<recipe title='asdf'>
+                <time>10</time>
+                <ingredients>
+                        <ingredient>Pasta</ingredient>
+                </ingredients>
+                <description>asdf</description>
+                <procedures>
+                        <procedure>Cuocere la pasta</procedure>
+                </procedures>
+        </recipe>
+	<recipe title='asdf'>
+                <time>10</time>
+                <ingredients>
+                        <ingredient>Pasta</ingredient>
+                </ingredients>
+                <description>asdf</description>
+                <procedures>
+                        <procedure>Cuocere la pasta</procedure>
+                </procedures>
+        </recipe>
+	<recipe title='asdf'>
+                <time>10</time>
+                <ingredients>
+                        <ingredient>Pasta</ingredient>
+                </ingredients>
+                <description>asdf</description>
+                <procedures>
+                        <procedure>Cuocere la pasta</procedure>
+                </procedures>
+        </recipe>
 </recipes>

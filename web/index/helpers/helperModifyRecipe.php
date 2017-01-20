@@ -91,6 +91,12 @@
         if ($nodeToRemove != null) {
             $theDocument->removeChild($nodeToRemove);
 
+            $sql = "DELETE FROM Recipes WHERE id = " . $recipeId;
+
+            if(!$conn->query($swl)) {
+                echo $conn->error;
+            }
+
             $file = fopen($filepath, "w");
             fwrite($file,$doc->saveXml());
             fclose($file);

@@ -65,7 +65,7 @@
         if (is_numeric($search)) {
             $sql = "SELECT * FROM Recipes WHERE time = " . $search . " OR id IN" .
             " (SELECT recipe_id FROM Evaluation HAVING avg(Evaluation) >= " .
-            $search . ")";
+            $search - 0.5 . " OR avg(Evaluation) <= " . $search + 0.5 . ")";
         } else {
             $sql = "SELECT * FROM Recipes WHERE title LIKE '%" . $search . "%' OR" .
             " description LIKE '%" . $search . "%'";

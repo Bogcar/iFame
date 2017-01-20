@@ -28,9 +28,6 @@
             }
         }
 
-        echo 'http://'. $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-        echo "User: " . $username;
-
         $sql = "SELECT avg(Evaluation) as eval FROM Evaluation WHERE recipe_id = " . $id;
 
         if($result = $conn->query($sql)) {
@@ -128,6 +125,19 @@
             $file = fopen("../usersData/" . $_SESSION['login_user'] . ".xml", "w");
             fwrite($file, $doc->saveXML());
             fclose($file);
+        }
+    }
+
+    function _insertEvaluation($userId, $title) {
+        include 'db.php';
+
+        $eval = $_GET['value'];
+        $recipeId = $_GET['recipe_id'];
+
+        $sql = "INSERT INTO Evaluation VALUES(" . $recipe_id . ", " . $eval . ")";
+
+        if(!$conn->query($sql)) {
+            echo $conn->error;
         }
     }
 ?>
