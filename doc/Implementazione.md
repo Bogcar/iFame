@@ -89,8 +89,8 @@ Data di fine: 20.01.2017
 |**Nome**       | Creazione ricetta |
 |**Riferimento**|REQ-003                             |
 |**Descrizione**| |
-|**Prerequisiti**| Interfaccia grafica e database  |
-|**Procedura**| Accedere nel sito con il proprio account, e creare un ricetta, con il tasto ADD, riempiendo tutti i campi  |
+|**Prerequisiti**| Interfaccia grafica, database e account  |
+|**Procedura**| Accedere nel sito con un account, e creare un ricetta, con il tasto ADD, riempiendo tutti i campi  |
 |**Risultati attesi** | Trovare la propria ricetta creata e salvata nel proprio storico |
 
 |Test Case      | TC-004                               |
@@ -98,7 +98,7 @@ Data di fine: 20.01.2017
 |**Nome**       | Modifica ricetta |
 |**Riferimento**|REQ-003                              |
 |**Descrizione**| |
-|**Prerequisiti**| Interfaccia grafica e database  |
+|**Prerequisiti**| Interfaccia grafica, database e account  |
 |**Procedura**| Recarsi sulla ricetta da modificare, ed eseguire tutti i cambiamenti desiderati, alla fine salvare  |
 |**Risultati attesi** | Visualizzare la ricetta modificata |
 
@@ -107,19 +107,18 @@ Data di fine: 20.01.2017
 |**Nome**       | Cancellazione ricetta |
 |**Riferimento**|REQ-003                              |
 |**Descrizione**| |
-|**Prerequisiti**| Interfaccia grafica e database  |
+|**Prerequisiti**| Interfaccia grafica, database e account  |
 |**Procedura**| Recarsi sulla ricetta da cancellare, ed eliminarla  |
 |**Risultati attesi** | Ricetta scomparsa dallo storico |
 
 |Test Case      | TC-006                               |
 |---------------|--------------------------------------|
-|**Nome**       | Ricerca nel sito |
-|**Riferimento**|REQ-007                              |
+|**Nome**       | Creazione lista spesa |
+|**Riferimento**|REQ-004                              |
 |**Descrizione**| |
 |**Prerequisiti**| Interfaccia grafica e database  |
-|**Procedura**| Digitare una parola chiave desiderata nella barra di ricerca, in seguinto cliccare sul bottone Submit o premere ENTER  |
-|**Risultati attesi** | Visualizzare delle ricette, sotto Search Results, che contengono la parola chiave ricercata |
-
+|**Procedura**| Accedere nel sito, visualizzare una ricetta, e creare una lista della spesa e scaricarla  |
+|**Risultati attesi** | File PDF scaricato contenente la lista |
 
 |Test Case      | TC-007                               |
 |---------------|--------------------------------------|
@@ -130,12 +129,22 @@ Data di fine: 20.01.2017
 |**Procedura**| Accedere nel sito con un account amministratore, andare su opzioni, eliminare e aggiungere un utente    |
 |**Risultati attesi** | Le ricette del utente cancellato non devono esserci, nel database(Users) i campi sono scomparsi, mentre per l'utente aggiunto vi è un nuovo campo nel database |
 
+|Test Case      | TC-008                               |
+|---------------|--------------------------------------|
+|**Nome**       | Ricerca nel sito |
+|**Riferimento**|REQ-007                              |
+|**Descrizione**| |
+|**Prerequisiti**| Interfaccia grafica e database  |
+|**Procedura**| Digitare una parola chiave desiderata nella barra di ricerca, in seguinto cliccare sul bottone Submit o premere ENTER  |
+|**Risultati attesi** | Visualizzare delle ricette, sotto Search Results, che contengono la parola chiave ricercata |
+
 ### Risultati test
 
 ![Esiti test](img/risultati_test.PNG)
 
 ### Mancanze/limitazioni conosciute
-
+Il problema principale del prodotto finale è quello che i fori per i pin non sono stati realizzati in modo adeguato poiché non sono abbastanza lunghi, e quindi alcuni pin non sono accessibili. La causa del tutto è quella che i fori sono stati realizzati con l’utilizzo di un trapano e di una lima piatta e ciò ha comportato una scoordinazione nella forma dei fori ed una sorta di imprecisione per l’altezza di questi.
+Come ho citato nella parte d’implementazione le vie d’accesso devono essere realizzate tramite un foro al centro delle forma da estrapolare dalla parte di compensato, questo realizzato con l’aiuto di un trapano ed in seguito eseguire il ritaglio grazie ad una sega a mano.
 
 ## Consuntivo
 
