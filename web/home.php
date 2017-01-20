@@ -6,8 +6,6 @@ include 'helpers/helperHome.php';
 if (isset($_SESSION['login_user'])) {
     $sql = "SELECT id FROM Users where username = '".$_SESSION['login_user']."'";
 
-
-
     $result = $conn->query($sql);
 
     if ($result->num_rows == 0) {
@@ -57,7 +55,7 @@ if (isset($_SESSION['login_user'])) {
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="">Home</a></li>
-                    <li><button id="add" class="btn btn-success navbar-btn">ADD</button></li>
+                    <li><button id="add" class="btn btn-success navbar-btn" onclick="add(<?php echo $_SESSION['login_user']?>)">ADD</button></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
