@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<recipes>
+	<recipe title='asdf'>
+		<time>0</time>
+		<ingredients>
+			<ingredient></ingredient>
+		</ingredients>
+		<description></description>
+		<procedures>
+			<procedure></procedure>
+		</procedures>
+	</recipe>
+	<recipe title='asdf'>
+		<time>0</time>
+		<ingredients>
+			<ingredient>• asdf</ingredient>
+		</ingredients>
+		<description>asdf</description>
+		<procedures>
+			<procedure>1. asdf</procedure>
+		</procedures>
+	</recipe>
+</recipes>
