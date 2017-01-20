@@ -16,7 +16,7 @@ Dalle ore 13:15 alle 14:45:
 
 ## Problemi Riscontrati
 
-Non sono stati ricontrati problemi, oggi.
+È stato erroneamente eliminato un file che purtroppo non è stato possibile recuperare, fortunatamente abbiamo trovato il tempo per riscriverlo e siamo riusciti addirittura a migliorarlo.
 
 ## Punto della situazione rispetto alla pianificazione
 
