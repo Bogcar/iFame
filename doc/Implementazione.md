@@ -143,8 +143,26 @@ Data di fine: 20.01.2017
 ![Esiti test](img/risultati_test.PNG)
 
 ### Mancanze/limitazioni conosciute
-Il problema principale del prodotto finale è quello che i fori per i pin non sono stati realizzati in modo adeguato poiché non sono abbastanza lunghi, e quindi alcuni pin non sono accessibili. La causa del tutto è quella che i fori sono stati realizzati con l’utilizzo di un trapano e di una lima piatta e ciò ha comportato una scoordinazione nella forma dei fori ed una sorta di imprecisione per l’altezza di questi.
-Come ho citato nella parte d’implementazione le vie d’accesso devono essere realizzate tramite un foro al centro delle forma da estrapolare dalla parte di compensato, questo realizzato con l’aiuto di un trapano ed in seguito eseguire il ritaglio grazie ad una sega a mano.
+
+Le mancanze e limitazioni principali del prodotto finale sono:
+
+- L'opzione di creare una lista della spesa
+
+- Gestione account dagli utenti amministratori
+
+- Problemi riguardanti la creazione, modifica e cancellazione di una ricetta.
+
+Per quanto concerne la lista della spesa, una parte molto importante del sito,
+non si è potuta sviluppare perché è stato dedicato più tempo del dovuto alle altre attività e di conseguenza il tempo per realizzare tutto il necessario non era sufficiente.
+
+Stessa situazione descritta sopra per la parte degli account con il compito di amministrare.
+
+Infine, per la ricetta ci è stato un incidente causato da disattenzione, un file presente nel server è stato sovrascritto, di conseguenza del lavoro è andato perso.
+Per colpa di quest'ultimo accaduto, è stata dovuta rifare questa parte, ma nel file
+sovrascritto tutte le parti non erano pienamente funzionanti.
+
+C'era l'intenzione di dare la possibilità di integrare il download di documenti
+PDF nell'applicazione 
 
 ## Consuntivo
 
@@ -188,9 +206,11 @@ PARTE NICO
 
 ### Sitografia
 
+-   http://www.ganttproject.biz/, *GanttProject*, 11-11-2016
+
 -   http://www.w3schools.com/, *Consigli programmazione*, 18-11-2016
 
--   http://www.ganttproject.biz/, *GanttProject*, 11-11-2016
+- http://plugins.krajee.com/star-rating, *Star rating Bootstrap*, 25-11-2016
 
 -   http://logicnet.dk/DiagramDesigner/, *DiagramDesigner*, 02-12-2016
 
