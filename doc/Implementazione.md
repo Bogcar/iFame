@@ -132,7 +132,7 @@ Data di fine: 20.01.2017
 
 ### Risultati test
 
-![Esiti test](img/risultati_test.png)
+![Esiti test](img/risultati_test.PNG)
 
 ### Mancanze/limitazioni conosciute
 
