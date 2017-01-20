@@ -206,6 +206,10 @@ I mezzi per realizzare il tutto sono i seguenti:
 
 - 2 PC: usati per svolgere il tutto
 
+### Analisi dei costi
+
+I costi per la realizzazione del progetto sono 50 CHF / h(ora).
+
 ## Progettazione
 
 ### Design dell’architettura del sistema  
