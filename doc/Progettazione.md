@@ -20,6 +20,8 @@
 
   - [Analisi dei mezzi](#analisi-dei-mezzi)
 
+  - [Analisi dei costi](#analisi-dei-costi)
+
 1. [Progettazione](#progettazione)
 
   - [Design dell’architettura del sistema](#design-dell’-architettura-del-sistema)
