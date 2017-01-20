@@ -507,3 +507,7 @@ Purtroppo che a scuola non ho ancora fatto PHP, lo abbiamo visto di sfuggita a f
 Alcuni di questi allegati sono recapitabili su GitHub al seguente indirizzo
 
 https://github.com/Bogcar/iFame
+
+Il sito web è stato caricato sul server samtinfo al seguente indirizzo:
+
+http://samtinfo.ch/i3_ifame
