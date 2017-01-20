@@ -3,8 +3,6 @@
 1. [Introduzione](#introduzione)
 
   - [Informazioni sul progetto](#informazioni-sul-progetto)
-
-
 1. [Implementazione](#implementazione)
 
 1. [Test](#test)
@@ -79,15 +77,41 @@ Data di fine: 20.01.2017
 
 |Test Case      | TC-002                               |
 |---------------|--------------------------------------|
+|**Nome**       | Login nel sito |
+|**Riferimento**|REQ-002                              |
+|**Descrizione**| |
+|**Prerequisiti**| Interfaccia grafica e database  |
+|**Procedura**| Recarsi nella pagina principale del sito e cliccare su Login, in alto a destra; inserire l'username e la password, premere invia |
+|**Risultati attesi** |Accesso al sito, trovarsi nella pagina con uno storico, nessun messaggio di un Login errato |
+
+|Test Case      | TC-003                              |
+|---------------|--------------------------------------|
 |**Nome**       | Creazione ricetta |
 |**Riferimento**|REQ-003                             |
 |**Descrizione**| |
 |**Prerequisiti**| Interfaccia grafica e database  |
-|**Procedura**| Accedere nel sito con il proprio account, e creare un ricetta riempiendo tutti i campi  |
+|**Procedura**| Accedere nel sito con il proprio account, e creare un ricetta, con il tasto ADD, riempiendo tutti i campi  |
 |**Risultati attesi** | Trovare la propria ricetta creata e salvata nel proprio storico |
 
+|Test Case      | TC-004                               |
+|---------------|--------------------------------------|
+|**Nome**       | Modifica ricetta |
+|**Riferimento**|REQ-003                              |
+|**Descrizione**| |
+|**Prerequisiti**| Interfaccia grafica e database  |
+|**Procedura**| Recarsi sulla ricetta da modificare, ed eseguire tutti i cambiamenti desiderati, alla fine salvare  |
+|**Risultati attesi** | Visualizzare la ricetta modificata |
 
-|Test Case      | TC-003                               |
+|Test Case      | TC-005                               |
+|---------------|--------------------------------------|
+|**Nome**       | Cancellazione ricetta |
+|**Riferimento**|REQ-003                              |
+|**Descrizione**| |
+|**Prerequisiti**| Interfaccia grafica e database  |
+|**Procedura**| Recarsi sulla ricetta da cancellare, ed eliminarla  |
+|**Risultati attesi** | Ricetta scomparsa dallo storico |
+
+|Test Case      | TC-006                               |
 |---------------|--------------------------------------|
 |**Nome**       | Ricerca nel sito |
 |**Riferimento**|REQ-007                              |
@@ -96,20 +120,22 @@ Data di fine: 20.01.2017
 |**Procedura**| Digitare una parola chiave desiderata nella barra di ricerca, in seguinto cliccare sul bottone Submit o premere ENTER  |
 |**Risultati attesi** | Visualizzare delle ricette, sotto Search Results, che contengono la parola chiave ricercata |
 
+
+|Test Case      | TC-007                               |
+|---------------|--------------------------------------|
+|**Nome**       | Opzioni amministratore |
+|**Riferimento**|REQ-005                              |
+|**Descrizione**| |
+|**Prerequisiti**| Interfaccia grafica, database e account amministratore  |
+|**Procedura**| Accedere nel sito con un account amministratore, andare su opzioni, eliminare e aggiungere un utente    |
+|**Risultati attesi** | Le ricette del utente cancellato non devono esserci, nel database(Users) i campi sono scomparsi, mentre per l'utente aggiunto vi è un nuovo campo nel database |
+
 ### Risultati test
 
-Tabella riassuntiva in cui si inseriscono i test riusciti e non del
-prodotto finale. Se un test non riesce e viene corretto l’errore, questo
-dovrà risultare nel documento finale come riuscito (la procedura della
-correzione apparirà nel diario), altrimenti dovrà essere descritto
-l’errore con eventuali ipotesi di correzione.
+![Esiti test](img/risultati_test.png)
 
 ### Mancanze/limitazioni conosciute
 
-Descrizione con motivazione di eventuali elementi mancanti o non
-completamente implementati, al di fuori dei test case. Non devono essere
-riportati gli errori e i problemi riscontrati e poi risolti durante il
-progetto.
 
 ## Consuntivo
 
@@ -124,16 +150,30 @@ ha causato un ritardo è quello della gestione dei dati nel database.
 
 ## Conclusioni
 
-Quali sono le implicazioni della mia soluzione? Che impatto avrà?
-Cambierà il mondo? È un successo importante? È solo un’aggiunta
-marginale o è semplicemente servita per scoprire che questo percorso è
-stato una perdita di tempo? I risultati ottenuti sono generali,
-facilmente generalizzabili o sono specifici di un caso particolare? ecc
+Siamo molto soddisfatti del risultato ottenuto, anche se avevamo molte altre
+idee da appliccare nel progetto ma però non siamo riusciti.
+Nel corso di questo progetto siamo riusciti a dividerci al meglio il lavoro
+da svolgere e quindi non sono state causate situazioni di confusione o di
+disordine, anche se siamo rimasti un po indietro rispetto al piano di lavoro
+da seguire(Gantt) perché abbiamo impiegato tanto tempo a realizzare la parte
+"background" del sito; ma nonostante tutto siamo riusciti a recuperare senza molti
+problemi.
 
 ### Sviluppi futuri
 
+Non vi è nessuna intenzione di effettuare dei miglioramenti al progetto, in futuro.
+Si ritiene che sia giusto mantenerlo nello stato corrente, chiaramente ad un sito web
+si possono aggiungere tantissime nuove opzioni, perché esistono tantissime varianti
+di perfezionamenti, in questo caso non lo riteniamo necessario.
+
 ### Considerazioni personali
-  Cosa ho imparato in questo progetto? ecc
+Questo progetto mi è servito molto ad imparare come si realizza accuratamente un
+sito, confronto a prima, adesso ho molto le idee più in chiaro su come realizzare ed organizzare il lavoro da svolgere per la creazione di un applicazione web.
+Devo dire, sinceramente, che questo progetto è stato tanto di mio gradimento poiché si è dovuto lavorare con i liguaggi di programmazione e simili, a differenza del primo
+progetto svolto. (Carlo)
+
+
+PARTE NICO
 
 ## Bibliografia
 
