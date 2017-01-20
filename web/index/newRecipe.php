@@ -1,8 +1,6 @@
 <?php
     session_start();
     include 'helpers/helperNewRecipe.php';
-
-    echo "User:" . $_GET['user_id'];
 ?>
 <html>
 <head>

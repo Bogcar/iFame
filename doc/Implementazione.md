@@ -52,7 +52,8 @@ Data di fine: 20.01.2017
 
 ## Implementazione
 
-### Realizzazione interfaccia grafica
+### Registrazione
+
 
 ### Log-in
 

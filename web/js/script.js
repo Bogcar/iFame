@@ -5,9 +5,8 @@ $(document).ready(function() {
         var h = $(window).height() - 150;
 
         $("iframe").css({"height" : h});
-});
 
-function add(value) {
-    var url = "index/newRecipe.php?user_id=" + value;
-    $('#frame').attr({'src' : url});
-}
+        $('#add').click(function() {
+            $('#frame').attr({'src' : 'http://samtinfo.ch/i3_ifame/index/newRecipe.php'});
+        });
+});
