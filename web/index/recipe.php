@@ -25,8 +25,6 @@
                 if(isset($_GET['action'])) {
                     if ($_GET['action'] == "delete") {
                         _deleteRecipe();
-                    } else if ($_GET['action'] == "modify") {
-                        _modifyRecipe();
                     }
                 }
             }
@@ -65,7 +63,7 @@
                     data-show-clear="false">';
 
             if ($userId == $id) {
-                echo '<a href="recipe.php?recipe_id=' . $_GET['recipe_id'] . '&action=modify" class="btn btn-primary">MODIFICA</a>';
+                echo '<a href="modifyRecipe.php?recipe_id=' . $_GET['recipe_id'] . '" class="btn btn-primary">MODIFICA</a>';
                 echo '<a href="recipe.php?recipe_id=' . $_GET['recipe_id'] . '&action=delete" class="btn btn-danger">DELETE</a>';
             }
         ?>

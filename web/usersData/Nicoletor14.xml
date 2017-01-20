@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recipes>
-	<recipe title='asdfa'>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<recipe title="wqf">
 		<time>0</time>
 		<ingredients>
-			<ingredient></ingredient>
-			<ingredient></ingredient>
+			<ingredient/>
 		</ingredients>
-		<description></description>
+		<description/>
 		<procedures>
-			<procedure></procedure>
-			<procedure></procedure>
+			<procedure/>
 		</procedures>
 	</recipe>
+	
+	
+	
 </recipes>
